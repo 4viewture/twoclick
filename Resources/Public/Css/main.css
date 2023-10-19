@@ -1,0 +1,28 @@
+.twoclick-wrapper .twoclick-preview {
+  display: none;
+}
+
+.twoclick-wrapper .twoclick-link {
+  display: none;
+}
+
+.twoclick-wrapper.twoclick-preview-show {
+  position: relative;
+}
+
+.twoclick-wrapper.twoclick-preview-show .twoclick-preview {
+  display: block;
+  background-image: var(--twoclick-bg-image);
+  background-size: cover;
+}
+
+.twoclick-wrapper.twoclick-preview-show .twoclick-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+

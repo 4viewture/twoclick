@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-05-22T10:19:33Z"
+	product-name="twoclick">
+		<header/>
+		<body>
+			<trans-unit id="ce_twoclick_container.title">
+				<source>Two click solution for every content element</source>
+			</trans-unit>
+			<trans-unit id="ce_twoclick_container.description">
+				<source>Makes it possible to hide any content behind a consent click</source>
+			</trans-unit>
+			<trans-unit id="ce_twoclick_container.name">
+				<source>TwoClick - Content is displayed after user interaction</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

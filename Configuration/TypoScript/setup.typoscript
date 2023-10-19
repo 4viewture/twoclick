@@ -1,0 +1,23 @@
+// default/general configuration (will add 'children_<colPos>' variable to processedData for each colPos in container
+tt_content.container_ce_twoclick < lib.contentElement
+tt_content.container_ce_twoclick {
+  templateName = TwoClick
+  templateRootPaths {
+    10 = EXT:twoclick/Resources/Private/Templates
+  }
+  partialRootPaths {
+    10 = EXT:twoclick/Resources/Private/Partials
+  }
+  dataProcessing {
+    100 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    100 {
+      references.fieldName = image
+      as = imagefile
+    }
+    200 = B13\Container\DataProcessing\ContainerProcessor
+    200 {
+      colPos = 10000
+      as = children_10000
+    }
+  }
+}
