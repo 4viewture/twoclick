@@ -21,7 +21,7 @@
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="Resources/Public/Icons/Extension.svg" alt="Logo" width="80" height="80">
   </a>
-
+</div>
 <h3 align="center">TYPO3 Extension twoclick</h3>
 
 <!-- TABLE OF CONTENTS -->
