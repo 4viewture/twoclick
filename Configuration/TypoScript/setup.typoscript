@@ -14,10 +14,33 @@ tt_content.container_ce_twoclick {
       references.fieldName = image
       as = imagefile
     }
-    200 = B13\Container\DataProcessing\ContainerProcessor
+    200 = FourViewture\TwoClick\DataProcessing\AssetsProcessor
     200 {
-      colPos = 10000
-      as = children_10000
+      mode = saveState
+    }
+    201 = FourViewture\TwoClick\DataProcessing\AssetsProcessor
+    200 {
+      mode = cleanUpAssetCollector
+    }
+
+    // lets render content
+
+      500 = B13\Container\DataProcessing\ContainerProcessor
+      500 {
+        colPos = 10000
+        as = children_10000
+      }
+
+    // restore asset handler
+
+    700 = FourViewture\TwoClick\DataProcessing\AssetsProcessor
+    700 {
+      mode = addScriptAndCssInlineWithAssetRenderer
+      as = assets
+    }
+    701 = FourViewture\TwoClick\DataProcessing\AssetsProcessor
+    701 {
+      mode = restoreState
     }
   }
 }

@@ -1,5 +1,4 @@
 <f:for each="{children}" as="record">
-    <f:format.raw>
-        {record.renderedContent}
-    </f:format.raw>
+    {record.renderedContent -> f:format.raw()}
+    {assets -> f:format.raw()}
 </f:for>

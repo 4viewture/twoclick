@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  FourViewture\TwoClick\:
+    resource: '../Classes/**'
+
+  FourViewture\TwoClick\DataProcessing\AssetsProcessor:
+    public: true
+    shared: false
+    tags:
+      - { name: 'data.processor', identifier: 'twoclick-assets' }

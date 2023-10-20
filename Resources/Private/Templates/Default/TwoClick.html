@@ -12,7 +12,8 @@
     <div class="twoclick-preview">
         <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
     </div>
-    <div class="twoclick-content" data-content="{f:render(partial: 'RenderedContent', arguments: {children:children_10000})->f:format.json()}">
+
+    <div class="twoclick-content" data-content="{f:render(partial: 'RenderedContent', arguments: {children:children_10000, assets:assets})->f:format.json()}">
 
     </div>
 </div>
