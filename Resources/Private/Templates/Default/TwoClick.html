@@ -1,6 +1,11 @@
 <f:asset.script identifier="twoclick_main" src="EXT:twoclick/Resources/Public/JavaScript/twoclick.js"  />
 <f:asset.css identifier="twoclick_css" href="EXT:twoclick/Resources/Public/Css/main.css"  />
-<div class="twoclick-wrapper twoclick-preview-show" style="--twoclick-bg-image:url({f:uri.image(image:imagefile.0)})" data-twoclick-id="{data.uid}">
+
+<f:if condition="{imagefile.0}">
+    <f:variable name="backgroundImage">--twoclick-bg-image:url({f:uri.image(image:imagefile.0)})</f:variable>
+</f:if>
+
+<div class="twoclick-wrapper twoclick-preview-show" style="{backgroundImage}" data-twoclick-id="{data.uid}">
     <a href="javascript:twoclick_reveal('{data.uid}');" class="twoclick-link" aria-label="Zeigt den versteckten Inhalt an" aria-describedby="twoclick_preview_{data.uid}">
 
     </a>
