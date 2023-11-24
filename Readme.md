@@ -108,7 +108,7 @@ The wrapper allows you to:
 
 - [x] works for all content elements
 - [x] javascript support
-- [ ] save and restore asset collector state and load scripts differently
+- [x] save and restore asset collector state and load scripts differently
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
